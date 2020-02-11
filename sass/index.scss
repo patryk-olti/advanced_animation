@@ -1,0 +1,56 @@
+$bgC: royalblue;
+$boxSize: 50vh;
+$boxC: #96c42c;
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $bgC;
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.watch{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $boxSize;
+    height: $boxSize;
+    background-color: $boxC;
+    border: 2px solid black;
+    border-radius: 50%;
+
+    .center{
+        width: 1vh;
+        height: 1vh;
+        background-color: black;
+        border-radius: 50%;
+    }
+
+    .tip.min{
+        position: absolute;
+        top: 2vh;
+        width: 2vh;
+        height: 23vh;
+        background-color: rgb(43, 37, 37);
+        border-radius: 50%;
+        transform-origin: bottom;
+    }
+
+    .tip.hour{
+        position: absolute;
+        top: 10vh;
+        width: 2vh;
+        height: 15vh;
+        background-color: rgb(26, 18, 18);
+        border-radius: 50%;
+        transform-origin: bottom;
+    }
+}
